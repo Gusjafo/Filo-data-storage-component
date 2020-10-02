@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Fylo data storage component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
+  <link rel="stylesheet" href="css/styles.css">
+
+
 <body>
 
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="left-box">
+    <div class="interior">
+      <img src="images\logo.svg" class="logo" alt="">
+      <br>
+      <img src="images\icon-document.svg" class="icono document-icon" alt="">
+      <img src="images\icon-folder.svg" class="icono folder-icon" alt="">
+      <img src="images\icon-upload.svg" class="icono upload-icon" alt="">
+    </div>
   </div>
+
+  <div class="right-box">
+    <h1 class="text">You’ve used 815 GB of your storage</h1>
+    <!-- <progress class="slider" value="815" max="1000">81.5%</progress> -->
+    <div class="slidercontainer">
+      <meter value="815" min="0" max="1000"></meter>
+      <div class="dot"></div>
+      <p class="capacidad">0 GB<span class="capa-final">1000 GB</span></p>
+    </div>
+  </div>
+
+  <img src="images\bg-desktop.png" class="width-desktop" alt="imagen de fondo">
+  <img src="images\bg-mobile.png" class="width-mobile" alt="imagen de fondo">
+
+  <div class="attribution">
+    <h5>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Gusjafo</a>.</h5>
+  </div>
+
 </body>
+
 </html>
