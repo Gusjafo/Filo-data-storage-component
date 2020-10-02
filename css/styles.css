@@ -56,13 +56,19 @@ p {
   z-index: 1;
   height: 160px;
   width: 38%;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   background-color: #1d2c67;
 }
 
 .text {
+  font-weight: lighter;
+  font-size: 0.9rem;
   padding: 30px 0 0 30px;
   opacity: 0.7;
+}
+
+.textBold {
+  font-weight: bold;
 }
 
 .slidercontainer {
@@ -75,7 +81,7 @@ meter {
 }
 
 meter::-webkit-meter-bar {
-  background: none; /* Required to get rid of the default background property */
+  background: none;
   background-color: #0c122c;
   height: 18px;
   border: 3px solid #0c122c;
@@ -89,16 +95,17 @@ meter::-webkit-meter-optimum-value {
 
 .dot {
   position: relative;
-  height: 12px;
-  width: 12px;
+  height: 10px;
+  width: 10px;
   background-color: #fff;
   border-radius: 50%;
-  top: -17px;
-  left: 78%;
+  top: -15px;
+  left: 78.5%;
 }
 
 .capacidad {
   margin-top: 0;
+  font-weight: bold;
   left: 0;
   width: 20%;
   opacity: 0.7;
@@ -106,13 +113,54 @@ meter::-webkit-meter-optimum-value {
 
 .capa-final {
   position: absolute;
+  font-weight: bold;
   margin-right: 30px;
   right: 0;
   opacity: 0.7;
 }
 
-/***************** Responsive *************/
+.boxWhite {
+  position: absolute;
+  right: 30px;
+  bottom: 140px;
+  height: 60px;
+  width: 150px;
+  background-color: white;
+  border-radius: 10px;
+}
 
+.TextBoxWhite {
+  font-size: 0.55rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-top: 4px;
+  vertical-align: middle;
+  text-align: center;
+  color: grey;
+}
+
+.bold {
+  position: relative;
+  top: 6px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: black;
+}
+
+.triangulo {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: -18px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #fff;
+  border-top: 20px solid #fff;
+}
+
+/***************** Responsive *************/
 .width-desktop {
   position: absolute;
   z-index: -1;
@@ -140,7 +188,6 @@ meter::-webkit-meter-optimum-value {
   }
 }
 
-
 @media only screen and (max-width: 920px) {
   .left-box {
     position: absolute;
@@ -154,19 +201,34 @@ meter::-webkit-meter-optimum-value {
   .right-box {
     position: absolute;
     margin-left: 10%;
-    top: 50vh;
+    margin-top: 8vh;
+    top: 42vh;
     z-index: 1;
     height: 160px;
     width: 80%;
   }
+
+  .text {
+    text-align: center;
+    padding: 30px 0 0;
+  }
+
+  .boxWhite {
+    position: absolute;
+    top: 130px;
+    right: 35%;
+  }
+
+  .triangulo{
+    position: relative;
+    display: none;
+  }
 }
 
-
 /*********************************/
-
 .attribution {
-  position: absolute;
-  left: 38%;
+  position: relative;
+  text-align: center;
   z-index: 1;
-  bottom: 1vh;
+  top: 90vh;
 }
