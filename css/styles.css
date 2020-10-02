@@ -1,0 +1,172 @@
+body {
+  background-color: #0c122c;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  font-size: 1rem;
+}
+
+p {
+  color: white;
+  font-size: 0.75rem;
+}
+
+.left-box {
+  position: absolute;
+  margin-left: 18%;
+  bottom: 35vh;
+  z-index: 1;
+  height: 200px;
+  width: 25%;
+  border-radius: 10px 100px 10px 10px;
+  background-color: #1d2c67;
+}
+
+.interior {
+  margin: 40px auto auto 40px;
+}
+
+.icono {
+  margin: 25px 10px auto auto;
+  padding: 10px;
+  background-color: #0c122c;
+  border-radius: 5px;
+}
+
+.document-icon {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.folder-icon {
+  padding: 12px;
+}
+
+.upload-icon {
+  padding: 14px 12px;
+}
+
+.right-box {
+  position: absolute;
+  margin-left: 45%;
+  bottom: 35vh;
+  z-index: 1;
+  height: 160px;
+  width: 38%;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #1d2c67;
+}
+
+.text {
+  padding: 30px 0 0 30px;
+  opacity: 0.7;
+}
+
+.slidercontainer {
+  margin: 5px 30px;
+}
+
+meter {
+  width: 100%;
+  margin: 3px auto;
+}
+
+meter::-webkit-meter-bar {
+  background: none; /* Required to get rid of the default background property */
+  background-color: #0c122c;
+  height: 18px;
+  border: 3px solid #0c122c;
+  border-radius: 20px;
+}
+
+meter::-webkit-meter-optimum-value {
+  background-image: linear-gradient(90deg, #ffa399, #ff4d97);
+  border-radius: 20px;
+}
+
+.dot {
+  position: relative;
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: -17px;
+  left: 78%;
+}
+
+.capacidad {
+  margin-top: 0;
+  left: 0;
+  width: 20%;
+  opacity: 0.7;
+}
+
+.capa-final {
+  position: absolute;
+  margin-right: 30px;
+  right: 0;
+  opacity: 0.7;
+}
+
+/***************** Responsive *************/
+
+.width-desktop {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  top: 50vh;
+  width: 100%;
+  height: 50vh;
+}
+
+.width-mobile {
+  position: relative;
+  z-index: -1;
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .width-desktop {
+    position: relative;
+    display: none;
+  }
+
+  .width-mobile {
+    position: relative;
+    display: block;
+  }
+}
+
+
+@media only screen and (max-width: 920px) {
+  .left-box {
+    position: absolute;
+    margin-left: 10%;
+    top: 15vh;
+    z-index: 1;
+    height: 200px;
+    width: 80%;
+  }
+
+  .right-box {
+    position: absolute;
+    margin-left: 10%;
+    top: 50vh;
+    z-index: 1;
+    height: 160px;
+    width: 80%;
+  }
+}
+
+
+/*********************************/
+
+.attribution {
+  position: absolute;
+  left: 38%;
+  z-index: 1;
+  bottom: 1vh;
+}
